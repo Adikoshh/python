@@ -3,17 +3,17 @@ def smallestInRow(mat):
     return minm
 
 
-n = int(input('введите кол строк:'))
-m = int(input('введите кол столбцов:'))
+n = int(input('Enter the number of rows: '))
+m = int(input('Enter the number of columns: '))
 a = []
 for i in range(m):
     b = []
     for j in range(n):
-        print('Введите [', i, ',', j, '] элемент')
+        print('Enter the elements: ')
         b.append(int(input()))
     a.append(b)
 
-print('исходный массив')
+print('Final array: ')
 for i in range(m):
     for j in range(n):
         print(a[i][j], end=' ')

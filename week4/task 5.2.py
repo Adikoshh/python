@@ -1,6 +1,6 @@
-def smallestInRow(mat):
-    minm = min(mat)
-    return minm
+def smallest(mat):
+    minn = min(mat)
+    return minn
 
 
 n = int(input('Enter the number of rows: '))
@@ -18,14 +18,14 @@ for i in range(m):
     for j in range(n):
         print(a[i][j], end=' ')
     print()
-minm = []
+minn = []
 for i in range(n):
-    minm.append(smallestInRow(a[i]))
-print(minm)
+    minn.append(smallest(a[i]))
+print(minn)
 
-for i in range(len(minm)):
-        if minm[i]%2==0:
-            minm[i]=0
+for i in range(len(minn)):
+        if minn[i]%2==0:
+            minn[i]=0
         else:
-            minm[i]=1
-print(minm)
+            minn[i]=1
+print(minn)
